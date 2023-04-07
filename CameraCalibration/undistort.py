@@ -51,6 +51,8 @@ while True:
    
     im2 = undistort_image(im)
     
+    #Points in 3d space used for perspective calibration process
+    
     #cv2.circle(im2, (317,237), 10, (0,255,0), thickness=1, lineType=8, shift=0)
     #cv2.circle(im2, (106,71), 12, (0,255,0), thickness=1, lineType=8, shift=0)
     #cv2.circle(im2, (106,142), 12, (0,255,0), thickness=1, lineType=8, shift=0)

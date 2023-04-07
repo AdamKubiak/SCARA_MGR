@@ -1,0 +1,394 @@
+cx: 316.866699863167,cy 236.8988361301308,fx 649.131591796875
+[[27.       21.3      47.2     ]
+ [11.1       8.3      46.13502 ]
+ [17.8       8.3      46.55105 ]
+ [24.5       8.3      45.93027 ]
+ [11.1      13.5      46.22337 ]
+ [17.8      13.5      46.97627 ]
+ [24.5      13.5      46.78846 ]
+ [11.1      18.7      45.95781 ]
+ [17.8      18.7      46.52795 ]
+ [24.5      18.7      46.861393]]
+Camera Matrix
+[[639.54640591   0.         317.99317137]
+ [  0.         619.18236022 236.30275556]
+ [  0.           0.           1.        ]]
+Distortion Coeff
+[[ 3.45296963e-01 -2.15453643e+00  3.54104203e-03 -1.49036989e-03
+   4.19485201e+00]]
+Region of Interest
+[  9   6 620 466]
+New Camera Matrix
+[[649.1315918    0.         316.86669986]
+ [  0.         627.59405518 236.89883613]
+ [  0.           0.           1.        ]]
+Inverse New Camera Matrix
+[[ 0.00154052  0.         -0.48813939]
+ [ 0.          0.00159339 -0.37747145]
+ [ 0.          0.          1.        ]]
+>==> Calibration Loaded
+solvePNP
+pnp rvec1 - Rotation
+[[ 0.01803735]
+ [ 0.09607013]
+ [-3.14200638]]
+pnp tvec1 - Translation
+[[ 27.50219016]
+ [ 23.77258659]
+ [-94.69632951]]
+R - rodrigues vecs
+[[-0.99993228 -0.0015822  -0.01152941]
+ [ 0.00228363 -0.99813015 -0.06108181]
+ [-0.01141121 -0.061104    0.99806617]]
+R|t - Extrinsic Matrix
+[[-9.99932282e-01 -1.58219880e-03 -1.15294095e-02  2.75021902e+01]
+ [ 2.28363218e-03 -9.98130151e-01 -6.10818108e-02  2.37725866e+01]
+ [-1.14112077e-02 -6.11040034e-02  9.98066173e-01 -9.46963295e+01]]
+newCamMtx*R|t - Projection Matrix
+[[-6.52703466e+02 -2.03888791e+01  3.08769830e+02 -1.21535729e+04]
+ [-1.27010784e+00 -6.40896016e+02  1.98106133e+02 -7.51391623e+03]
+ [-1.14112077e-02 -6.11040034e-02  9.98066173e-01 -9.46963295e+01]]
+=======POINT # 0 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[27. ]
+ [21.3]
+ [47.2]
+ [ 1. ]]
+//-- suv1
+[[-15636.91340355]
+ [-11848.68414954]
+ [   -49.19722324]]
+>==> uv1 - Image Points
+[[317.84138159]
+ [240.84050624]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.19722323554719
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[316.8667 ]
+ [236.89883]
+ [  1.     ]]
+//-- suv1
+[[-15588.962   ]
+ [-11654.765   ]
+ [   -49.197224]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[26.9268402 ]
+ [20.99147124]
+ [47.18027505]]
+=======POINT # 1 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[11.1    ]
+ [ 8.3    ]
+ [46.13502]
+ [ 1.     ]]
+//-- suv1
+[[-5322.70669164]
+ [-3707.82081908]
+ [  -49.28435312]]
+>==> uv1 - Image Points
+[[107.9999301 ]
+ [ 75.23322484]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.284353117742825
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[106.]
+ [ 71.]
+ [  1.]]
+//-- suv1
+[[-5224.141  ]
+ [-3499.189  ]
+ [  -49.28435]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[10.94892844]
+ [ 7.96795089]
+ [46.11296687]]
+=======POINT # 2 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[17.8    ]
+ [ 8.3    ]
+ [46.55105]
+ [ 1.     ]]
+//-- suv1
+[[-9567.36255853]
+ [-3633.91302615]
+ [  -48.94558565]]
+>==> uv1 - Image Points
+[[195.46936524]
+ [ 74.24393799]
+ [  1.        ]]
+>==> s - Scaling Factor
+-48.9455856517436
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[195.]
+ [ 71.]
+ [  1.]]
+//-- suv1
+[[-9544.39    ]
+ [-3475.1367  ]
+ [  -48.945587]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[17.76518844]
+ [ 8.04742473]
+ [46.53518549]]
+=======POINT # 3 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[24.5    ]
+ [ 8.3    ]
+ [45.93027]
+ [ 1.     ]]
+//-- suv1
+[[-14132.15352713]
+ [ -3765.40250659]
+ [   -49.64161741]]
+>==> uv1 - Image Points
+[[284.68358336]
+ [ 75.85172892]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.64161740647126
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[284.]
+ [ 71.]
+ [  1.]]
+//-- suv1
+[[-14098.219   ]
+ [ -3524.5547  ]
+ [   -49.641617]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[24.448603  ]
+ [ 7.91687154]
+ [45.90622804]]
+=======POINT # 4 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[11.1    ]
+ [13.5    ]
+ [46.22337]
+ [ 1.     ]]
+//-- suv1
+[[-5401.4495423 ]
+ [-7022.9776227 ]
+ [  -49.51391639]]
+>==> uv1 - Image Points
+[[109.08952344]
+ [141.83845947]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.513916385762556
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[106.]
+ [142.]
+ [  1.]]
+//-- suv1
+[[-5248.475   ]
+ [-7030.976   ]
+ [  -49.513916]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[10.86432727]
+ [13.51234805]
+ [46.22143142]]
+=======POINT # 5 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[17.8    ]
+ [13.5    ]
+ [46.97627]
+ [ 1.     ]]
+//-- suv1
+[[-9542.08946774]
+ [-6882.33340044]
+ [  -48.83892827]]
+>==> uv1 - Image Points
+[[195.37876455]
+ [140.91900957]
+ [  1.        ]]
+>==> s - Scaling Factor
+-48.83892827139577
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[195.]
+ [142.]
+ [  1.]]
+//-- suv1
+[[-9523.591  ]
+ [-6935.128  ]
+ [  -48.83893]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[17.77131156]
+ [13.58391973]
+ [46.98107859]]
+=======POINT # 6 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[24.5    ]
+ [13.5    ]
+ [46.78846]
+ [ 1.     ]]
+//-- suv1
+[[-13973.19293728]
+ [ -6928.04923687]
+ [   -49.10282917]]
+>==> uv1 - Image Points
+[[284.5700171 ]
+ [141.09266928]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.10282917208006
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[284.]
+ [142.]
+ [  1.]]
+//-- suv1
+[[-13945.203  ]
+ [ -6972.6016 ]
+ [   -49.10283]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[24.45672204]
+ [13.57078818]
+ [46.79229898]]
+=======POINT # 7 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[11.1    ]
+ [18.7    ]
+ [45.95781]
+ [ 1.     ]]
+//-- suv1
+[[ -5589.46869192]
+ [-10408.24648972]
+ [   -50.09670385]]
+>==> uv1 - Image Points
+[[111.57358193]
+ [207.76309995]
+ [  1.        ]]
+>==> s - Scaling Factor
+-50.096703852882676
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[106.]
+ [209.]
+ [  1.]]
+//-- suv1
+[[ -5310.2505  ]
+ [-10470.211   ]
+ [   -50.096703]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[10.66966351]
+ [18.79786931]
+ [45.9588823 ]]
+=======POINT # 8 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[17.8    ]
+ [18.7    ]
+ [46.52795]
+ [ 1.     ]]
+//-- suv1
+[[ -9786.53887632]
+ [-10303.80781381]
+ [   -49.60412065]]
+>==> uv1 - Image Points
+[[197.29286093]
+ [207.72080383]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.60412064676581
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[195.]
+ [209.]
+ [  1.]]
+//-- suv1
+[[ -9672.804   ]
+ [-10367.262   ]
+ [   -49.604122]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[17.62456823]
+ [18.80064062]
+ [46.53210442]]
+=======POINT # 9 =========================
+Forward: From World Points, Find Image Pixel
+{{-- XYZ1
+[[24.5     ]
+ [18.7     ]
+ [46.861393]
+ [ 1.      ]]
+//-- suv1
+[[-14056.69555349]
+ [-10246.26049571]
+ [   -49.34777788]]
+>==> uv1 - Image Points
+[[284.84961547]
+ [207.63367543]
+ [  1.        ]]
+>==> s - Scaling Factor
+-49.34777787970517
+Solve: From Image Pixels, find World Points
+>==> uv1
+[[284.]
+ [209.]
+ [  1.]]
+//-- suv1
+[[-14014.77   ]
+ [-10313.686  ]
+ [   -49.34778]]
+get camera coordinates, multiply by inverse Camera Matrix, subtract tvec1
+      xyz_c
+{{-- XYZ
+[[24.43517096]
+ [18.80713172]
+ [46.86721014]]
+>>>>>>>>>>>>>>>>>>>>> S RESULTS
+Mean: -49.357307
+Std: 0.35313043
+>>>>>> S Error by Point
+Point 0
+S: -49.197224 Mean: -49.357307 Error: 0.16008377
+Point 1
+S: -49.28435 Mean: -49.357307 Error: 0.072956085
+Point 2
+S: -48.945587 Mean: -49.357307 Error: 0.41172028
+Point 3
+S: -49.641617 Mean: -49.357307 Error: -0.2843094
+Point 4
+S: -49.513916 Mean: -49.357307 Error: -0.15660858
+Point 5
+S: -48.83893 Mean: -49.357307 Error: 0.5183792
+Point 6
+S: -49.10283 Mean: -49.357307 Error: 0.25447845
+Point 7
+S: -50.096703 Mean: -49.357307 Error: -0.73939514
+Point 8
+S: -49.604122 Mean: -49.357307 Error: -0.24681473
+Point 9
+S: -49.34778 Mean: -49.357307 Error: 0.009529114
