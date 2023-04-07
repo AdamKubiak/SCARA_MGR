@@ -1,4 +1,3 @@
-import os
 import cv2 as cv2
 import numpy as np
 from picamera2 import Picamera2
@@ -82,6 +81,8 @@ def draw_circles(circles, original_image,camera, id):
     return original_image
 
 
+        
+
 def main():
 
     cv2.startWindowThread()
@@ -93,6 +94,8 @@ def main():
     circles_blue = None
     circles_green = None
     camera = cam.camera()
+    
+    
 
 
     while(1):
@@ -114,5 +117,6 @@ def main():
             image = draw_circles(circles_green, original_image,camera, 2)
             circles_green = None
         cv2.imshow("Camera undistort", image)
+        
 
 main()
