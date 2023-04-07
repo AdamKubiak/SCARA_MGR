@@ -13,7 +13,7 @@ criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 objp = np.zeros((7*7,3), np.float32)
 
 #add 2.5 to account for 2.5 cm per square in grid
-objp[:,:2] = np.mgrid[0:7,0:7].T.reshape(-1,2)*2.5
+objp[:,:2] = np.mgrid[0:7,0:7].T.reshape(-1,2)*2.
 
 # Arrays to store object points and image points from all the images.
 objpoints = [] # 3d point in real world space
