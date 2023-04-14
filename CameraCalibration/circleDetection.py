@@ -116,6 +116,22 @@ def main():
             circles_green = np.uint16(np.around(circles_green))
             image = draw_circles(circles_green, original_image,camera, 2)
             circles_green = None
+
+        #old_image_height, old_image_width, channels = image.shape
+
+# create new image of desired size and color (blue) for padding
+        #new_image_width = 640
+        #new_image_height = 480
+        #color = (0,0,0)
+        #result = np.full((new_image_height,new_image_width, channels), color, dtype=np.uint8)
+
+# compute center offset
+        #x_center = (new_image_width - old_image_width) // 2
+        #y_center = (new_image_height - old_image_height) // 2
+
+# copy img image into center of result image
+        #result[y_center:y_center+old_image_height, 
+        #x_center:x_center+old_image_width] = image
         cv2.imshow("Camera undistort", image)
         
 

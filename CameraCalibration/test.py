@@ -21,13 +21,16 @@ print(camera.calculateXYZ(640,0))
 print("Y: ")
 print(camera.calculateXYZ(0,0))
 print(camera.calculateXYZ(0,480))
-
+file_count = 0
 while True:
     
     im = picam2.capture_array()
    
     im2 = camera.undistortImageWithCrop(im)
-    cv2.circle(im2, (320,240), 12, (0,255,0), thickness=1, lineType=8, shift=0)
-    cv2.circle(im2, (0,0), 12, (0,255,0), thickness=1, lineType=8, shift=0)
+    #cv2.circle(im2, (320,240), 12, (0,255,0), thickness=1, lineType=8, shift=0)
+    #cv2.circle(im2, (0,0), 12, (0,255,0), thickness=1, lineType=8, shift=0)
     
     cv2.imshow("Camera undistort", im2)
+    input(f"CalibrationImages/Save {file_count} file")
+    cv2.imwrite(f'/home/rpi/SCARA/CameraCalibration/Dataset/image_{file_count}.jpg', im2)
+    file_count += 1
