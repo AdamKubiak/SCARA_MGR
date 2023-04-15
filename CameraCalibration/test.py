@@ -21,7 +21,7 @@ print(camera.calculateXYZ(640,0))
 print("Y: ")
 print(camera.calculateXYZ(0,0))
 print(camera.calculateXYZ(0,480))
-file_count = 0
+file_count = 301
 while True:
     
     im = picam2.capture_array()
