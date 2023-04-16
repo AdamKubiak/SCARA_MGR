@@ -32,5 +32,5 @@ while True:
     
     cv2.imshow("Camera undistort", im2)
     input(f"CalibrationImages/Save {file_count} file")
-    cv2.imwrite(f'/home/rpi/SCARA/CameraCalibration/Dataset/image_{file_count}.jpg', im2)
+    cv2.imwrite(f'/home/rpi/SCARA/Dataset/image_{file_count}.jpg', im2)
     file_count += 1
