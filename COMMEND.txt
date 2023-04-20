@@ -1,0 +1,5 @@
+Detekcja
+python .\detect.py --weights .\runs\train\yolov5n_results\weights\last.pt --img 640 --conf 0.6 --source test\images
+
+Trening
+python .\train.py --img 640 --batch 16  --epochs 150 --data data.yaml --weights ' ' --cfg yolov5n.yaml --name yolov5n_results

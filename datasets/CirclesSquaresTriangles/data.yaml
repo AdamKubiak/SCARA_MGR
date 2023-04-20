@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 12
+names: ['blueCircle', 'blueSquare', 'blueTriangle', 'greenCircle', 'greenSquare', 'greenTriangle', 'pinkCircle', 'pinkSquare', 'pinkTriangle', 'redCircle', 'redSquare', 'redTriangle']
+
+roboflow:
+  workspace: project
+  project: scara-yolov5
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/scara-yolov5/dataset/1
