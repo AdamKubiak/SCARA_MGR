@@ -76,6 +76,9 @@ def draw_circles(circles, original_image,camera, id):
         
         if(id == 2):
             cv2.putText(original_image,"Green Circle ",(c[0],c[1]+40),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,0,0),1)
+            cv2.putText(original_image,str(truncate(c[0],2))+","+str(truncate(c[1],2)),(c[0]+90,c[1]+40),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,0,0),1)
+            XYZ = camera.calculateXYZ(c[0],c[1])
+            cv2.putText(original_image,str(truncate(XYZ[0],2))+","+str(truncate(XYZ[1],2)),(c[0]+90,c[1]+80),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,0,0),1)
 
         
     return original_image
@@ -132,7 +135,9 @@ def main():
 # copy img image into center of result image
         #result[y_center:y_center+old_image_height, 
         #x_center:x_center+old_image_width] = image
-        cv2.imshow("Camera undistort", image)
+        input(f"CalibrationImages/Save file")
+        cv2.imwrite(f'/home/rpi/SCARA_MGR/CameraCalibration/new_chess_0.jpg', image)
+        #cv2.imshow("Camera undistort", image)
         
 
 main()

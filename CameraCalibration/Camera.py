@@ -13,7 +13,7 @@ class camera:
     projectionMatrix = None
 
     def __init__(self) -> None:
-        saveDirectory = "/home/rpi/SCARA/CameraCalibration/CameraData/"
+        saveDirectory = "/home/rpi/SCARA_MGR/CameraCalibration/CameraData/"
 
         self.cameraMatrix = np.load(saveDirectory+'cam_mtx.npy')
         self.distorionVector = np.load(saveDirectory+'dist.npy')
@@ -44,6 +44,7 @@ class camera:
         undistored = cv2.remap(image, mapx, mapy, cv2.INTER_LINEAR)
         x, y, w, h = self.roiVector
         undistored = undistored[y:y+h, x:x+w]
+        undistored = undistored[:, :, ::-1]
         return undistored
     
     
@@ -58,7 +59,7 @@ class camera:
         xyz_c=xyz_c-self.tVector
         XYZ=self.inverseRodriguesMatrix.dot(xyz_c)
         XYZ[0] = XYZ[0] - 2.87960059
-        XYZ[1] = XYZ[1] - 2.36699736
+        XYZ[1] = XYZ[1] - 2.36699736-0.8
         return XYZ
     
     def calculateUV(self,x,y):

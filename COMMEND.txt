@@ -3,3 +3,6 @@ python .\detect.py --weights .\runs\train\yolov5n_results\weights\last.pt --img 
 
 Trening
 python .\train.py --img 640 --batch 16  --epochs 150 --data data.yaml --weights ' ' --cfg yolov5n.yaml --name yolov5n_results
+
+Camera
+libcamera-hello -t 0 --width 640 --height 480 --qt-preview
